@@ -1,6 +1,0 @@
-
-
-# class TextService():
-    
-#     @staticmethod
-#     def 
