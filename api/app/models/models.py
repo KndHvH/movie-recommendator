@@ -1,6 +1,8 @@
-from dataclasses import dataclass
-    
-@dataclass
-class MovieRecommendation:
+from pydantic import BaseModel
+
+class MovieRecommendation(BaseModel):
     movie: str
-    blacklist: list[str] = []
+    blacklist: list = []
+
+class MovieInfoRequest(BaseModel):
+    title: str

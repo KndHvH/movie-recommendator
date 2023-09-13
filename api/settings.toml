@@ -1,0 +1,16 @@
+[default]
+application_name="movies-api"
+application_description="movies-api"
+default_log_level="INFO"
+default_access_log="True"
+
+request_ssl_verify="True"
+request_default_user_agent="movies-api"
+
+[test]
+
+[qa]
+
+[prod]
+default_access_log="False"
+sentry_dsn=""
