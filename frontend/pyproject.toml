@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "movie-recomendation-api-pycaret"
+name = "frontend"
 version = "0.1.0"
 description = ""
-authors = ["kndhvh <delend89@gmail.com>"]
+authors = ["KndHvH <delend89@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
+streamlit = "^1.26.0"
 
 
 [build-system]

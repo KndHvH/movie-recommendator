@@ -7,7 +7,8 @@ class RecomendationService:
     def __init__(self, filename: str = "all_movies.csv") -> None:
         self.df = FileHelper.get_dataframe(filename)
 
-    def get_recomendation(self, movie_title: str, blacklist: list = []):
+    def get_recomendation(self, movie_title: str, blacklist: list = [])
+        blacklist.append(movie_title)
         movie_index = self.df[self.df["title_pt"] == movie_title].index[0]
         #todo PAU
         tfidf_matrix = TextHelper.get_vectorized_matrix(self.df, "sinopse")
