@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from api.routers import root
-from api.routers import health_check
+from app.routers import root
+from app.routers import health_check
 
 app = FastAPI()
 app_v1 = FastAPI()
