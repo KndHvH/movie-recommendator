@@ -23,6 +23,12 @@ def recomend(data: MovieRecommendation):
 
 @router.post("/info")
 def info(request: MovieInfoRequest):
-    df = FileHelper.get_dataframe('all_movies.csv')
-    movie_info = df[df['title_pt'] == request.title]
-    return movie_info.iloc[0].to_dict() 
+    df = FileHelper.get_dataframe("all_movies.csv")
+    movie_info = df[df["title_pt"] == request.title]
+    return movie_info.iloc[0].to_dict()
+
+
+@router.get("/movie")
+def get_movie():
+    recomendation_service = RecomendationService()
+    return recomendation_service.get_random_movie()

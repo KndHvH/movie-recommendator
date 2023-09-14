@@ -14,9 +14,15 @@ class MoviesApi:
         return data
     
     @staticmethod
-    def post_files(movie:str):
+    def get_movie_info(movie:str):
         data = {"title": movie}
         response = requests.post(f'{os.getenv("URL")}/info')
+        data = response.json()
+        return data
+    
+    @staticmethod
+    def get_random_movie():
+        response = requests.get(f'{os.getenv("URL")}/movie')
         data = response.json()
         return data
     
