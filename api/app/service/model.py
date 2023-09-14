@@ -5,4 +5,4 @@ class ModelService():
 
     @staticmethod
     def get_model_with_tfidf(tfidf_matrix:pd.DataFrame):
-        return NearestNeighbors(n_neighbors=30, metric='cosine').fit(tfidf_matrix)
+        return NearestNeighbors(n_neighbors=100, metric='cosine').fit(tfidf_matrix)

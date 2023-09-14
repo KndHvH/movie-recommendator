@@ -14,8 +14,7 @@ def recomend(data: MovieRecommendation):
     blacklist = data.blacklist
 
     recomendation_service = RecomendationService()
-
-    recomendation = recomendation_service.get_recomendation(
+    recomendation = recomendation_service.get_recommendation(
         movie_title=movie_title, blacklist=blacklist
     )
     return recomendation

@@ -36,7 +36,7 @@ class RecomendationService:
             self.df.iloc[pair[0]]["title_pt"]
             for pair in sorted_paired
             if self.df.iloc[pair[0]]["title_pt"] not in blacklist
-        ][:10]
+        ]
 
         return recommended_movies
 
