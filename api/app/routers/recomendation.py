@@ -8,6 +8,12 @@ from app.models.models import MovieRecommendation, MovieInfoRequest
 router = APIRouter()
 
 
+@router.get("/all-movies")
+def get_all_movies():
+    df = FileHelper.get_dataframe("all_movies.csv")
+    return df["title_pt"].to_json()
+
+
 @router.post("/recommend")
 def recomend(data: MovieRecommendation):
     movie_title = data.movie
