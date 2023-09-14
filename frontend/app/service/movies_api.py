@@ -30,3 +30,9 @@ class MoviesApi:
         data = response.json()
         return data
     
+    @staticmethod
+    def get_all_movies():
+        response = requests.get(f'{os.getenv("API_URL")}/all-movies')
+        data = response.json()
+        return data
+    
