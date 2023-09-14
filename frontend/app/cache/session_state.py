@@ -7,5 +7,3 @@ def init_session_state():
         st.session_state.blacklist = []
     if 'recomendations' not in st.session_state:
         st.session_state.recomendations = None
-    if 'recomendation_threshold' not in st.session_state:
-        st.session_state.recomendation_threshold = {'like':0,'dislike':-1}

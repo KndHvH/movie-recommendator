@@ -8,7 +8,7 @@ from app.service.model import ModelService
 class RecomendationService:
     def __init__(self, filename: str = "all_movies.csv") -> None:
         self.df = FileHelper.get_dataframe(filename)
-        self.tfidf_matrix = TextHelper.get_vectorized_matrix(self.df, "sinopse")
+        self.tfidf_matrix = TextHelper.get_vectorized_matrix(self.df, "sinopse_aprimorada")
 
     def _get_movie_index(self, movie_title: str) -> int:
         return self.df[self.df["title_pt"] == movie_title].index[0]

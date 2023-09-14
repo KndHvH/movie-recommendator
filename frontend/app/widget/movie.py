@@ -16,4 +16,5 @@ class MovieWidgets:
             with c2: st.markdown(f"##### {movie_data['rating']}⭐")
             with c3: st.markdown(f"##### {movie_data['genre']}🎭")
 
-            st.write(movie_data['sinopse'])
+            # st.write(movie_data['sinopse'])
+            st.write(movie_data['sinopse_aprimorada'])
