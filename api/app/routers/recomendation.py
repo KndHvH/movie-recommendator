@@ -11,7 +11,7 @@ router = APIRouter()
 @router.get("/all-movies")
 def get_all_movies():
     df = FileHelper.get_dataframe("all_movies.csv")
-    return df["title_pt"].to_json()
+    return df["title_pt"].to_list()
 
 
 @router.post("/recommend")
