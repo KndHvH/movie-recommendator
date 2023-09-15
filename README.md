@@ -56,7 +56,7 @@ The methodology used for recommending movies is as follows:
 
 ### Members
 
-*@kndhvh
-*@The-Icaro
-*@eduardomatoss
-*@cesarnorena
+* @kndhvh
+* @The-Icaro
+* @eduardomatoss
+* @cesarnorena
