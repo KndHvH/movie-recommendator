@@ -6,6 +6,9 @@
 [![bandit](https://img.shields.io/badge/code%20style-bandit-green.svg)](https://github.com/PyCQA/bandit)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+
+![Showcase](frontend\images\showcase.jpg)
+
 ## Technology and Resources
 
 - [Python 3.10](https://www.python.org/downloads/release/python-31010/) - **pre-requisite**
@@ -42,6 +45,13 @@ The `entrypoint` of the frontend project is the `main.py` file on the frontend f
 
 This repository contains the code and documentation for a college project aimed at enhancing our understanding of recommendation clustering techniques through the lens of the film industry. In this project, we delve into the exciting world of movie recommendations and employ clustering algorithms to develop a more efficient and personalized movie recommendation system.
 
+## Hosting
+
+The images and assets for this project are hosted on Google Cloud. You can access them at the following URLs:
+
+- [Web App Assets](https://web-app-olylq7xdoa-rj.a.run.app)
+- [Movie API Assets](https://movieapi-olylq7xdoa-rj.a.run.app)
+
 ### Webscraping Notebook
 
 The `Webscraping` notebook is dedicated to the process of extracting data from the web. In the context of our movie recommendation project:
@@ -71,6 +81,9 @@ The methodology used for recommending movies is as follows:
 5. **K-Nearest Neighbors**: Using the movie vector, the K-Nearest Neighbors algorithm is applied to find movies that are similar to the given movie. This is done using a pre-trained model that has been fit with the `tfidf_matrix`.
 6. **Recommendation Generation**: The distances and indices of the K-Nearest Neighbors are retrieved. These are paired and sorted based on distances. Movie titles corresponding to the sorted indices are retrieved, ensuring that the given movie and any other movies in the blacklist are excluded. The resulting list of movie titles is the recommended movies.
 7. **Random Movie Retrieval**: There's also a function to retrieve a random movie title from the dataframe.
+
+
+
 
 ### Members
 
