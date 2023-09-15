@@ -53,3 +53,10 @@ The methodology used for recommending movies is as follows:
 5. **K-Nearest Neighbors**: Using the movie vector, the K-Nearest Neighbors algorithm is applied to find movies that are similar to the given movie. This is done using a pre-trained model that has been fit with the `tfidf_matrix`.
 6. **Recommendation Generation**: The distances and indices of the K-Nearest Neighbors are retrieved. These are paired and sorted based on distances. Movie titles corresponding to the sorted indices are retrieved, ensuring that the given movie and any other movies in the blacklist are excluded. The resulting list of movie titles is the recommended movies.
 7. **Random Movie Retrieval**: There's also a function to retrieve a random movie title from the dataframe.
+
+### Members
+
+*@kndhvh
+*@The-Icaro
+*@eduardomatoss
+*@cesarnorena
