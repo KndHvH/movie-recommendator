@@ -42,6 +42,24 @@ The `entrypoint` of the frontend project is the `main.py` file on the frontend f
 
 This repository contains the code and documentation for a college project aimed at enhancing our understanding of recommendation clustering techniques through the lens of the film industry. In this project, we delve into the exciting world of movie recommendations and employ clustering algorithms to develop a more efficient and personalized movie recommendation system.
 
+### Webscraping Notebook
+
+The `Webscraping` notebook is dedicated to the process of extracting data from the web. In the context of our movie recommendation project:
+
+- **Purpose**: This notebook is used to gather movie data from IMDB. This could include movie titles, synopses, genres, ratings, and other relevant details that are essential for building a recommendation system.
+
+- **Functionality**: The notebook contains scripts that automate the process of visiting web pages, navigating through them, and extracting the required data.
+
+### GPT Notebook
+
+The `GPT` notebook focuses on the utilization of the Generative Pre-trained Transformer (GPT) model specifically for enhancing movie synopses:
+
+- **Purpose**: This notebook employs the GPT model to refine and possibly generate more detailed or engaging movie synopses. Given the vast knowledge and language capabilities of GPT, it can take basic synopses and transform them into more descriptive and captivating summaries.
+
+- **Functionality**: The notebook contains scripts to load a pre-trained GPT model. It then processes the existing movie synopses from the dataset and uses the model to generate enhanced versions. There might also be steps to fine-tune the GPT model on the movie dataset to make its outputs more aligned with the context of movies.
+
+
+
 ### Recommendation Methodology
 
 The methodology used for recommending movies is as follows:
@@ -60,3 +78,4 @@ The methodology used for recommending movies is as follows:
 * [@The-Icaro](https://github.com/The-Icaro)
 * [@eduardomatoss](https://github.com/eduardomatoss)
 * [@cesarnorena](https://github.com/cesarnorena)
+
