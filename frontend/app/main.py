@@ -39,11 +39,12 @@ if st.session_state.current_movie is not None:
             st.session_state.current_movie = st.session_state.recomendations[-1]
             st.experimental_rerun()
 
-st.markdown(f"##### Blacklist Size: {len(st.session_state.blacklist)}")
+# with c1: st.markdown(f"##### Blacklist Size: {len(st.session_state.blacklist)}")
 
-my_expander = st.expander("Selecione um filme 🎬", expanded=True)
-selected_movie_name = my_expander.selectbox("", MoviesApi.get_all_movies())
-
+_, c1, _,= st.columns(3)
+with c1:
+    my_expander = st.expander("Selecione um filme 🎬", expanded=True)
+    selected_movie_name = my_expander.selectbox("", MoviesApi.get_all_movies())
 
 if my_expander.button("Recomendar"):
     st.write("#")
