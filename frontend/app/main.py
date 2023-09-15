@@ -7,7 +7,10 @@ st.set_page_config(layout="wide")
 
 st.title("Movie Recomendator🎬")
 
-st.image("https://static.amazon.jobs/teams/53/images/IMDb_Header_Page.jpg?1501027252")
+st.image(
+    "https://static.amazon.jobs/teams/53/images/IMDb_Header_Page.jpg?1501027252",
+    use_column_width="always",
+)
 
 init_session_state()
 
@@ -17,7 +20,7 @@ if st.session_state.current_movie is None:
 
 if st.session_state.current_movie is not None:
     _, c1, _ = st.columns((1, 0.8, 1))
-    c2, c3 = st.columns(2)
+    _, _, c2, c3, _, _ = st.columns(6)
 
     st.session_state.recomendations = MoviesApi.get_recomendation(
         st.session_state.current_movie, st.session_state.blacklist
@@ -38,7 +41,7 @@ if st.session_state.current_movie is not None:
 
 st.markdown(f"##### Blacklist Size: {len(st.session_state.blacklist)}")
 
-my_expander = st.expander("Selecione um filme 🎬",expanded=True)
+my_expander = st.expander("Selecione um filme 🎬", expanded=True)
 selected_movie_name = my_expander.selectbox("", MoviesApi.get_all_movies())
 
 
