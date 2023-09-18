@@ -1,9 +1,7 @@
 # Movie Recommendator
 
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-31010/) 
-[![PEP20](https://img.shields.io/badge/code%20style-pep20-red.svg)](https://www.python.org/dev/peps/pep-0020/) 
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/) 
-[![bandit](https://img.shields.io/badge/code%20style-bandit-green.svg)](https://github.com/PyCQA/bandit)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
@@ -51,7 +49,7 @@ The `entrypoint` of the frontend project is the `main.py` file on the frontend f
 
 ### Content
 
-This repository contains the code and documentation for a college project aimed at enhancing our understanding of recommendation clustering techniques through the lens of the film industry. In this project, we delve into the exciting world of movie recommendations and employ clustering algorithms to develop a more efficient and personalized movie recommendation system.
+The Movie Recommender is a comprehensive system designed for efficient and personalized movie recommendations. This project showcases how TF-IDF, KNN, data scraping, and advanced models like GPT can revolutionize the movie recommendation experience. The repository offers tools for extracting movie data from platforms such as IMDb, refining movie synopses using the GPT model, and suggesting movies based on cosine distance of the synopses.
 
 
 ### Webscraping Notebook
