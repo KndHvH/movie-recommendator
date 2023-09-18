@@ -31,7 +31,6 @@ The images and assets for this project are hosted on Google Cloud. You can acces
 
 - `/`: The root path is a redirect to `/docs`
 - `/docs`: Swagger
-- `/redoc`: Redoc
 - `/health-check`: Verify sure the application is up
 - `/all-movies`: Get all movies names
 - `/recommend`: Recommend movies
