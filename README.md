@@ -9,6 +9,14 @@
 
 ![](frontend/images/showcase.jpg)
 
+## Hosting
+
+The images and assets for this project are hosted on Google Cloud. You can access them at the following URLs:
+
+- [Web App Assets](https://web-app-olylq7xdoa-rj.a.run.app)
+- [Movie API Assets](https://movieapi-olylq7xdoa-rj.a.run.app)
+
+
 ## Technology and Resources
 
 - [Python 3.10](https://www.python.org/downloads/release/python-31010/) - **pre-requisite**
@@ -45,12 +53,6 @@ The `entrypoint` of the frontend project is the `main.py` file on the frontend f
 
 This repository contains the code and documentation for a college project aimed at enhancing our understanding of recommendation clustering techniques through the lens of the film industry. In this project, we delve into the exciting world of movie recommendations and employ clustering algorithms to develop a more efficient and personalized movie recommendation system.
 
-## Hosting
-
-The images and assets for this project are hosted on Google Cloud. You can access them at the following URLs:
-
-- [Web App Assets](https://web-app-olylq7xdoa-rj.a.run.app)
-- [Movie API Assets](https://movieapi-olylq7xdoa-rj.a.run.app)
 
 ### Webscraping Notebook
 
