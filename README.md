@@ -14,7 +14,7 @@
 The images and assets for this project are hosted on Google Cloud. You can access them at the following URLs:
 
 - [Web App Assets](https://web-app-olylq7xdoa-rj.a.run.app)
-- [Movie API Assets](https://movieapi-olylq7xdoa-rj.a.run.app)
+- [Movie API Assets](https://movieapi-olylq7xdoa-rj.a.run.app/v1/docs)
 
 
 ## Technology and Resources
