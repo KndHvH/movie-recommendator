@@ -43,13 +43,15 @@ with tab2:
     _, c1, _,= st.columns(3)
     with c1:
         my_expander = st.expander("Selecione um filme 🎬", expanded=True)
+        if st.session_state.movies[0] != '': st.session_state.movies.insert(0,'')
         selected_movie_name = my_expander.selectbox("", st.session_state.movies)
 
     if my_expander.button("Recomendar Similares"):
         st.write("#")
-        recomendations = MoviesApi.get_recomendation(selected_movie_name)
-        col1, col2, col3, col4, col5 = st.columns(5)
-        cols = [col1, col2, col3, col4, col5]
-        for i in range(0, 5):
-            with cols[i]:
-                MovieWidgets.display_movie(recomendations[i])
+        if selected_movie_name != '':
+            recomendations = MoviesApi.get_recomendation(selected_movie_name)
+            col1, col2, col3, col4, col5 = st.columns(5)
+            cols = [col1, col2, col3, col4, col5]
+            for i in range(0, 5):
+                with cols[i]:
+                    MovieWidgets.display_movie(recomendations[i])
